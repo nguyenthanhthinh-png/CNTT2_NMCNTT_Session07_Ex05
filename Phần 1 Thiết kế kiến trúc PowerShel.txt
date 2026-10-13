@@ -1,0 +1,7 @@
+Phần 1: Thiết kế kiến trúc PowerShell Script
+Script auto_report.ps1 gồm 4 khối:
+1. Header block: Ghi tên script, tác giả và ngày tạo bằng dấu #.
+2. Biến cấu hình: Khai báo đường dẫn file log và file báo cáo bằng biến $.
+3. Thông báo tiến trình: Dùng Write-Host để hiển thị trạng thái trên terminal, không ghi vào file báo cáo.
+4. Logic xử lý: Đọc log bằng Get-Content → lọc lỗi 404 bằng Select-String → ghi kết quả vào báo cáo.
+Lưu ý: Để mỗi lần chạy tạo một báo cáo mới có tiêu đề, nhưng vẫn giữ lịch sử các lần chạy trước, nên ghi tiêu đề bằng Add-Content thay vì ghi đè toàn bộ file.

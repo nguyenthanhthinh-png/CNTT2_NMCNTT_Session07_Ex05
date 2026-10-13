@@ -1,0 +1,19 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+PS C:\Users\thanhthinh> Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force
+PS C:\Users\thanhthinh> Get-ExecutionPolicy -List
+
+        Scope ExecutionPolicy
+        ----- ---------------
+MachinePolicy       Undefined
+   UserPolicy       Undefined
+      Process          Bypass
+  CurrentUser       Undefined
+ LocalMachine       Undefined
+
+
+PS C:\Users\thanhthinh> & "C:\Users\thanhthinh\auto_report.ps1"
+Dang loc log...
+Da loc log va luu vao report.txt!
+PS C:\Users\thanhthinh>
